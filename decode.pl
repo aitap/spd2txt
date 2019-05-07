@@ -8,6 +8,7 @@ for my $src (@ARGV) {
 	open my $rfh, "<:raw", $src;
 
 	(my $dest = $src) =~ s/\.spd$/.txt/;
+	die "$src doesn't look like spd file" if $src eq $dest;
 	open my $wfh, ">", $dest;
 
 	# 1024 looks like a fine header size, but there is
