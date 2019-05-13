@@ -11,3 +11,5 @@ Offset | Length      | Type    | Value
 0x3a5  | 0xf?        | string  | device serial number
 0x400  | 0x2         | integer | number of wavelength-value pairs
 0x405  | 0x8 * 2 * n | double  | wavelength-value pair
+
+All multi-octet numeric values are little-endian.
