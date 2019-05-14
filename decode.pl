@@ -15,7 +15,7 @@ for my $src (@ARGV) {
 	# additional shift by 5 bytes for some reason
 	seek $rfh, 1029, SEEK_SET;
 
-	# the spectrum is stored in pairs of lambda, 1-T
+	# the spectrum is stored in pairs of lambda, A
 	local $/ = \16;
 	print $wfh (join("\t", unpack "d<2", $_), "\n")
 		while (<$rfh>);

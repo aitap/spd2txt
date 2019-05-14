@@ -6,7 +6,7 @@ use Test::More;
 
 # with default export settings (are there any?),
 # wavelength is specified to 1e-2 nm;
-# 1-T is specified to 1e-3 relative units
+# A is specified to 1e-3 relative units
 my @tol = (5e-3, 5e-4);
 
 sub similar {
